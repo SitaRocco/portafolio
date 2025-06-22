@@ -1,0 +1,363 @@
+ 
+ /* Estilos generales */
+ 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: #101518;
+      padding-top: 30px;
+      
+    }
+    
+   .gsap-logo,
+   .gsap-texto {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: none !important; 
+     
+    }
+    
+    #about {
+      scroll-margin-top: 20px;
+    }
+    
+    #proyectos {
+      scroll-margin-top: 80px;
+    }
+
+
+    /* Estilo hero section */
+    
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      margin-top:-30px;
+    }
+
+    .keycap {
+      width: 300px;
+      height:300px;
+      margin: 40px 0px;
+
+    }
+
+    .tagline {
+      margin-top: 20px;
+      font-size: 7vh;
+      font-weight: 800;
+      color: #e57098;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .descripcion {
+      font-size: 2.7vh;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    /* Estilo navbar*/
+    
+    .navbar {
+      background-color: #101518;
+      border-bottom: 2px solid #ffffff; 
+      padding: 1rem 2rem;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    .navbar a:hover{
+        color:#d2d907;
+    }
+
+    .btn-escribeme {
+       background-color:#d2d907;
+      color:black!important;
+      font-weight: 800!important;
+      font-size: 1rem!important;
+      letter-spacing:2px!important;
+      padding: 10px 60px;
+      white-space: nowrap;
+      border-radius: 50px;
+      border:2.5px solid #d2d907;
+      font-family:"Montserrat", sans-serif ;
+      text-decoration:none;
+    }
+    
+    .btn-escribeme:hover{
+      background-color:transparent;
+      color:#d2d907!important;
+    }
+    
+    .navbar .logo {
+      width: 50px;
+      height: auto;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+    
+    /*estilo icono flecha*/
+    
+    .scroll-down-indicator {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      z-index: 2;
+    }
+    
+    /*Estilo seccion Sobre mi */
+    
+    .sobre-mi {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      flex-wrap: wrap;
+      margin-top:-5vh;
+    }
+
+    .titulo {
+      font-family:"Montserrat", sans-serif;
+      font-weight:800;
+      color:#e57098;
+      font-size:8vh;
+    }
+    
+    .parrafo-desktop {
+      font-family:"Montserrat", sans-serif;
+      color: white;
+      font-size:2.5vh;
+    }
+    
+    #ro {
+      transform: scaleX(-1);
+      height:300px;
+      width: 300px;
+      border-radius:200px;
+      background-color: #d2d907;
+    }
+   
+    /* Estilos seccion proyectos */
+    
+    #proyecto {
+      font-family:"Montserrat", sans-serif;
+      font-weight:800;
+      color:#e05798;
+      font-size:8vh;
+    }
+    
+    #nombre-proyecto {
+      font-family:"Montserrat", sans-serif;
+      font-weight:300;
+      font-size:2.5vh;
+    }
+    
+    /* Estilos call to action */
+    
+    .cta-section h2 {
+      font-family:"Montserrat", sans-serif;
+      font-weight:800;
+      color:#e05798;
+      font-size:9vh;
+      
+    }
+    
+    .cta-section {
+      position: relative;
+      background: #101518; 
+      padding: 100px 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+
+
+    /*figuritas que caen*/
+
+   .falling-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+   .shape {
+      position: absolute;
+      opacity: 0.1;
+      animation: fall linear infinite;
+    }
+
+   /* Animaci¨®n ca¨ªda */
+   
+    @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
+    
+    50% {
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+    }
+
+   /* Formitas que caen */
+
+    .square {
+      width:5px;
+      height: 5px;
+      background: white; 
+      border-radius:12px;
+    }
+
+    #cta-botoncito {
+      background-color:#d2d907;
+      color:black!important;
+      font-weight: 800!important;
+      font-size: 1rem!important;
+      letter-spacing:2px;
+      padding: 10px 60px;
+      white-space: nowrap;
+      border-radius: 50px;
+      border:2.5px solid #d2d907;
+      font-family:"Montserrat", sans-serif ;
+      text-decoration:none;
+    }
+    
+    #cta-botoncito:hover{
+      background-color:transparent;
+      color:#d2d907!important;
+    }
+
+    /* Estilos seccion detalle proyectos*/
+    
+    .project-detail h1 {
+       font-family:"Montserrat", sans-serif ;
+       font-weight:800;
+       color:#e05798;
+       font-size:8vh;
+    }
+  
+   .project-detail a {
+      font-family:"Montserrat", sans-serif;
+      color:#e7e000;
+      font-size:3vh;
+    }
+  
+    /* Estilos footer */
+  
+    #hecho-por {
+      font-family:"Montserrat", sans-serif;
+      letter-spacing:3px;
+    }
+
+   
+    /*media*/
+    
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        margin-top: 8vh;
+    }
+
+     .keycap {
+        width: 150px;
+        height: auto;
+        margin: 0;
+        margin-bottom:50px;
+    }
+
+    .tagline {
+        margin: 0.5rem 0;
+        font-size: 9vw;
+    }
+
+    .descripcion {
+        font-size: 4.5vw;
+        padding:17px;
+    }
+      
+    .navbar-nav{
+        align-items: center;
+    }
+      
+    .scroll-down-indicator {
+        bottom: -8%;  
+        font-size: 2rem;
+    }
+      
+    .titulo {
+        font-size:4vh;
+        margin-top:17vh;
+    }
+       
+    .parrafo-desktop {
+        width: 100%!important;
+        font-size:4.5vw!important;
+    }
+  
+    #proyecto {
+        font-size:8vw;
+        margin-top:-4vh!important;
+        align-content:center;
+        align-items:center;
+    }
+       
+    .cta-section h2{
+        font-size:4vh; 
+        margin-bottom:60px;
+       
+    }
+    
+    #cta-botoncito {
+       font-size: 2vh;
+       padding: 0.8rem 6rem;
+       letter-spacing:2px;
+       margin-top:3rem;
+     
+    }
+    
+    #ro{
+       height:150px;
+       width: 150px;
+       margin-top:3vh;
+       margin-bottom:2vh;
+    }
+   
+    }
+
+   
+      
+   
